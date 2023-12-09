@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seungmin Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="memeContainer">
+            <img src="meme/meme1.png" class="memeImage" style="display: block;">
+            <img src="meme/meme2.png" class="memeImage">
+            <img src="meme/meme3.png" class="memeImage">
+            <img src="meme/meme4.png" class="memeImage">
+            <img src="meme/meme5.png" class="memeImage">
+            <img src="meme/meme6.png" class="memeImage">
+            <img src="meme/meme7.png" class="memeImage">
+        </div>
+        <h2>Check out my workspace!</h2>
+        <div class="clock">
+            <div class="today" id="today"></div>
+            <div class="time" id="time"></div>
+        </div>
+    </div>
+    <div id="nav">
+        <div id="circle">
+            <img id="profile" src="./my_profile.jpg" />
+        </div>
+        <ul>
+            <li class="nav_list"><a href="index.html">Introduce</a></li>
+            <li class="nav_list"><a href="activities.html">Activities</a></li>
+            <li class="nav_list"><a href="appendix.html" style="color:purple">Appendix</a></li>
+        </ul>
+    </div>
+    <div id="content_appendix" class="content">
+        <div id="workspace">
+            <div class="image-container">
+                <span class="click-text">click ↓</span>
+                <img src="./github.png" alt="Github" class="appendix_img" onclick="redirectToMyGithub()">
+            </div>
+            <div class="image-container">
+                <span class="click-text">click ↓</span>
+                <img src="./notion.png" alt="Notion" class="appendix_img" onclick="redirectToMyNotion()">
+            </div>
+        </div>
+        <div id="mail">
+            <img src="./mail.png" alt="Mail">
+            <p style="font-size: 40px; text-align: center; color: #908ED6">s1m0611@naver.com</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

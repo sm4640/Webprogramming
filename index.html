@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seungmin Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="memeContainer">
+            <img src="meme/meme1.png" class="memeImage" style="display: block;">
+            <img src="meme/meme2.png" class="memeImage">
+            <img src="meme/meme3.png" class="memeImage">
+            <img src="meme/meme4.png" class="memeImage">
+            <img src="meme/meme5.png" class="memeImage">
+            <img src="meme/meme6.png" class="memeImage">
+            <img src="meme/meme7.png" class="memeImage">
+        </div>
+        <h2>Hello, I'm Lim-Seungmin!!</h2>
+        <div class="clock">
+            <div class="today" id="today"></div>
+            <div class="time" id="time"></div>
+        </div>
+    </div>
+    <div id="nav">
+        <div id="circle">
+            <img id="profile" src="./my_profile.jpg" />
+        </div>
+        <ul>
+            <li class="nav_list"><a href="index.html" style="color:purple">Introduce</a></li>
+            <li class="nav_list"><a href="activities.html">Activities</a></li>
+            <li class="nav_list"><a href="appendix.html">Appendix</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p class="index_p" style="font-size: 50px; text-align: center; color: #908ED6">
+            I’m steadily growing
+            <span id="Backend">Backend</span>
+            developer !!
+        </p>
+        <p class="index_p" style="font-size: 80px; text-align: center; color: blue; animation: resizeText 2s infinite;">
+            Tech Stack
+        </p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="./django.png" alt="Django" class="tech-stack" onclick="redirectToDjangoDocs()">
+            <img src="./mysql.png" alt="MySQL" class="tech-stack" onclick="redirectToMySqlWebsite()">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

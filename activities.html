@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seungmin Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="memeContainer">
+            <img src="meme/meme1.png" class="memeImage" style="display: block;">
+            <img src="meme/meme2.png" class="memeImage">
+            <img src="meme/meme3.png" class="memeImage">
+            <img src="meme/meme4.png" class="memeImage">
+            <img src="meme/meme5.png" class="memeImage">
+            <img src="meme/meme6.png" class="memeImage">
+            <img src="meme/meme7.png" class="memeImage">
+        </div>
+        <h2>Here's my changes in 2023</h2>
+        <div class="clock">
+            <div class="today" id="today"></div>
+            <div class="time" id="time"></div>
+        </div>
+    </div>
+    <div id="nav">
+        <div id="circle">
+            <img id="profile" src="./my_profile.jpg" />
+        </div>
+        <ul>
+            <li class="nav_list"><a href="index.html">Introduce</a></li>
+            <li class="nav_list"><a href="activities.html" style="color:purple">Activities</a></li>
+            <li class="nav_list"><a href="appendix.html">Appendix</a></li>
+        </ul>
+    </div>
+    <div id="content_activities" class="content">
+        <div style="height: 200px;"></div>
+        <div class="timeline">
+            <div class="line"></div>
+            <div class="oddbranch" style="left: 20%;">
+                <img src="./himjjasok.PNG" alt="Him" class="activities_img" onclick="redirectToHim()">
+                <span class="oddlabel">힘짜속</span>
+            </div>
+            <div class="evenbranch" style="left: 40%;">
+                <span class="evenlabel">물어봐</span>
+                <img src="./muleoba.PNG" alt="Mul" id="mul" class="activities_img" onclick="redirectToMul()">
+            </div>
+            <div class="oddbranch" style="left: 60%;">
+                <img src="./sepirot.PNG" alt="Se" class="activities_img" onclick="redirectToSe()">
+                <span class="oddlabel">세피로트</span>
+            </div>
+            <div class="evenbranch" style="left: 80%;">
+                <span class="evenlabel">위벤트</span>
+                <img src="./wevent.PNG" alt="We" id="we" class="activities_img" onclick="redirectToWe()">
+            </div>
+        </div>
+        <div style="height: 300px;"></div>
+        <hr>
+        <div id="Him" class="left-align" style="margin-left: 10px;">
+            <h2 style="font-size: 40px;">1. 힘짜속</h2>
+            <p>
+                - 기간: 4월 초 ~ 5월 25일 <br>
+                - 사용했던 기술: 프론트 -> react / 백 -> django / DB -> SQLite <br>
+                - 서비스 설명: 감정 쓰레기통 서비스<br>
+            <div style="margin-left: 20px;">
+                1. 힘든 일, 짜증나는 일, 속상한 일을 선택하고 <br>
+                2. 편지지에 자신의 감정을 적은 후 <br>
+                3. 쓰레기통에 버리면 <br>
+                4. 포춘쿠키가 운세를 전해주듯, 작은 위로의 말 건네주기 <br>
+            </div>
+            </p>
+        </div>
+        <hr>
+        <div id="Mul" class="left-align" style="margin-left: 10px;">
+            <h2 style="font-size: 40px;">2. 물어봐</h2>
+            <p>
+                - 기간: 7월 중순 ~ 8월 19일 <br>
+                - 사용했던 기술: 프론트 -> react.js, next.js / 백 -> django-restframework / DB -> SQLite <br>
+                - 서비스 설명: 디지털 격차 극복을 위한 위치기반 멘토멘티 매칭 서비스 <br>
+            <div style="margin-left: 20px;">
+                1. 앱 첫 실행 시, 멘토/멘티 설정 <br>
+                2. 멘티는 카테고리 선택 후 멘토에게 도움 요청 <br>
+                3. 멘토는 들어온 요청 확인 뒤 수락 <br>
+                4. 멘토가 수락하면 멘티는 멘토의 도착시간 파악 가능 <br>
+                5. 멘토는 멘티의 위치 파악 가능 <br>
+                6. 도움을 받고 난 후, 멘티는 멘토의 이용후기를 작성할 수 있음 <br>
+            </div>
+            </p>
+        </div>
+        <hr>
+        <div id="Se" class="left-align" style="margin-left: 10px;">
+            <h2 style="font-size: 40px;">3. 세피로트 (최우수상 수상🏆)</h2>
+            <p>
+                - 기간: 10월 말 ~ 11월 12일 <br>
+                - 사용했던 기술: 프론트 -> react.js / 백 -> django-restframework / DB -> MySQL <br>
+                - 서비스 설명: 친환경 광고를 보고 나무를 키워서 실제로 심는 서비스 <br>
+            <div style="margin-left: 20px;">
+                1. 자신의 나무에 닉네임 설정 가능 <br>
+                2. 친환경 관련 제품 광고를 보면 물을 줄 수 있음 <br>
+                3. 최대 레벨이 되면 실제로 나무를 심을 수 있음 <br>
+                4. 심어놓은 나무를 추후에도 모니터링 가능 <br>
+            </div>
+            </p>
+        </div>
+        <hr>
+        <div id="We" class="left-align" style="margin-left: 10px;">
+            <h2 style="font-size: 40px;">4. 위벤트</h2>
+            <p>
+                - 기간: 9월 초 ~ 진행 중<br>
+                - 사용했던 기술: 프론트 -> react.js / 백 -> django-restframework / DB -> MySQL <br>
+                - 서비스 설명: 행사 주최자와 협찬사를 편리하게 매칭시켜주는 서비스 <br>
+            <div style="margin-left: 20px;">
+                1. 주최자는 서비스에서 정해놓은 양식대로 행사 정보에 대해 입력하고 등록함 <br>
+                2. 협찬사는 다양한 행사 정보를 통일된 양식으로 쉽게 접할 수 있음<br>
+                3. 관심있는 행사 주최자에게 바로 채팅 기능을 통해 연락할 수 있음 <br>
+                4. 주최자와 협찬사가 협찬 내용 조율 후 협찬 체결 <br>
+            </div>
+            </p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
