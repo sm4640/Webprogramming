@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "YanoljaYacheR";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YanoljaYacheR.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: "Nanum Brush Script", cursive;
 }
@@ -423,7 +431,7 @@ hr {
 
 .left-align {
     align-self: flex-start;
-    font-family: "Nunito", sans-serif;
+    font-family: "YanoljaYacheR";
 }
 
 .left-align > p {
