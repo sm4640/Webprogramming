@@ -423,12 +423,13 @@ hr {
 
 .left-align {
     align-self: flex-start;
+    font-family: "Nunito", sans-serif;
 }
 
 .left-align > p {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .left-align > div {
-    font-size: 25px;
+    font-size: 20px;
 }
